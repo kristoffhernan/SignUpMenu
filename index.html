@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Styling</title>
+    <style>
+      :root {
+        --main-green: #74c69d;
+        --secondary-green: #52b788;
+        --main-blue: #023e8a;
+        --main-white: #fff;
+        --secondary-white: #fff1e6;
+      }
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        position: relative;
+        background: var(--main-blue);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .container {
+        width: 430px;
+        height: 650px;
+        padding: 20px;
+        background: var(--main-white);
+        margin: 50px auto auto;
+        text-align: center;
+        color: #03071e;
+      }
+
+      header h1 {
+        margin: 5px;
+      }
+
+      header {
+        margin-bottom: 35px;
+      }
+
+      form {
+        color: #6c757d;
+      }
+      form p {
+        margin-bottom: 3px;
+        text-align: left;
+      }
+
+      form input {
+        width: 100%;
+        border-radius: 10px;
+        height: 40px;
+        font-size: 1.2rem;
+      }
+
+      form input,
+      button {
+        border-radius: 10px;
+      }
+
+      form button {
+        margin: 20px 0px;
+        width: 100%;
+        height: 3.5vh;
+        background: var(--main-green);
+        color: var(--main-white);
+        border: none;
+      }
+
+      form button:hover {
+        color: var(--secondary-white);
+        background: var(--secondary-green);
+      }
+
+      .terms {
+        font-size: 0.9rem;
+        padding: 0;
+      }
+      .terms a {
+        text-decoration: none;
+      }
+      footer {
+        text-align: center;
+      }
+      footer p {
+        color: var(--main-white);
+        display: inline-block;
+      }
+
+      footer a {
+        color: var(--main-green);
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        color: var(--secondary-green);
+      }
+
+      .watermark {
+        position: fixed;
+        right: 2px;
+        bottom: 2px;
+        height: 40px;
+        width: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Sign Up</h1>
+        <p>It's free and only takes a minute</p>
+      </header>
+      <form action="">
+        <p>First Name</p>
+        <input type="text" name="firstname" id="" />
+        <p>Last Name</p>
+        <input type="text" name="lastname" id="" />
+        <p>Email</p>
+        <input type="email" name="email" id="" />
+        <p>Password</p>
+        <input type="password" name="password" id="" />
+        <p>Confirm Password</p>
+        <input type="password" name="confirmpass" id="" />
+
+        <button type="submit">Sign Up</button>
+      </form>
+
+      <p class="terms">
+        By clicking the Sign Up button you agree to our
+        <a href="#">Terms & Conditions and Privacy Policy</a>
+      </p>
+    </div>
+
+    <footer>
+      <p>Already have an account?</p>
+      <a href="#">Login Here</a>
+    </footer>
+    <img class="watermark" src="./udemy-logo.jpg" alt="udemy-logo" />
+  </body>
+</html>
